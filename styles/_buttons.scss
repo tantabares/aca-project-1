@@ -1,0 +1,19 @@
+.pod-button {
+    height: 4rem;
+    width: 100%;
+    background-color: $color-button;
+    color: $color-font;
+    font-size: 1.33rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 4rem; 
+
+    &:hover {
+        cursor: pointer;
+        color: $color-white;
+        background: linear-gradient(225deg, $color-button-gradient-right 0%, $color-button 100%);
+    }
+}

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap");
+.pod-header {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  width: 100%; }
+
+.pod-nav {
+  width: 100%; }
+  .pod-nav #hamburguer {
+    display: none; }
+  .pod-nav .container {
+    background-color: #ffffff; }
+  .pod-nav img {
+    height: 32px;
+    vertical-align: middle;
+    padding: 2% 5%; }
+  .pod-nav label {
+    display: inline-block;
+    color: #060A24;
+    font-style: normal;
+    font-size: 2em;
+    padding: 2% 5%;
+    vertical-align: middle;
+    float: right; }
+  .pod-nav input:checked ~ ul {
+    display: block;
+    background: linear-gradient(225deg, #0000a3, #0000ff); }
+  .pod-nav ul {
+    list-style-type: none;
+    display: none;
+    padding: 0 5% 0 5%; }
+    .pod-nav ul li {
+      padding: 0 0 2rem 0; }
+      .pod-nav ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.33rem;
+        line-height: 2.33rem; }
+        .pod-nav ul li a:hover {
+          color: #00f3bb; }
+      .pod-nav ul li:first-child {
+        padding-top: 1.33rem; }
+
+.pod-button {
+  height: 4rem;
+  width: 100%;
+  background-color: #00f3bb;
+  color: #060A24;
+  font-size: 1.33rem;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 4rem; }
+  .pod-button:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background: linear-gradient(225deg, #0000fe 0%, #00f3bb 100%); }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 12px; }
+
+body {
+  background-color: #ffffff;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #060A24;
+  font-size: 1.17rem; }
+
+.container {
+  padding: 0 5% 0 5%;
+  margin: 0 auto; }
+
+.pod-footer {
+  width: 100%;
+  color: #ffffff;
+  font-family: 'IBM Plex Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; }
+  .pod-footer::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -o-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    z-index: 2;
+    background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    position: absolute;
+    top: 15%; }
+
+.center {
+  width: 100%;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 5.33rem;
+  padding-bottom: 5.58rem;
+  z-index: 3; }
+  .center p {
+    font-size: 3rem;
+    line-height: 42px;
+    letter-spacing: 0;
+    padding-bottom: 3rem; }
+  .center .container {
+    padding: 5.33rem 5% 5.58rem 5%; }
+
+/*# sourceMappingURL=styles.css.map */
