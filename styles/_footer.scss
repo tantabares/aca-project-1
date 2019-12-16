@@ -1,0 +1,107 @@
+.pod-footer {
+
+    .pod-blue-footer {
+        width: 100%;
+        
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            -webkit-transform: skewY(-3deg);
+            -moz-transform: skewY(-3deg);
+            -ms-transform: skewY(-3deg);
+            -o-transform: skewY(-3deg);
+            transform: skewY(-3deg);
+            z-index: 2;
+            background: linear-gradient(225deg, $color-gradient-top 0%, $color-gradient-bottom-color 100%);
+            position: absolute;
+            top: 15%;
+        }
+
+        .center {
+            width: 100%;
+            width: fit-content;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            top: 5.33rem;
+            padding-bottom: 5.58rem;
+            z-index: 3;
+        
+            p {
+                font-size: 3rem;
+                line-height: 42px;
+                letter-spacing: 0;
+                padding-bottom: 3rem;
+                color: $color-white;
+                font-family: 'IBM Plex Sans', sans-serif;
+            }
+        
+            .container {
+                padding: 5.33rem 5% 5.58rem 5%;
+            }
+        }
+    }
+
+    .pod-white-footer {
+
+        padding: 2rem 0 0 0;
+
+        .container p {
+            font-size: 1.17rem;
+            line-height: 1.83rem;
+            text-align: center;
+        }
+
+        .pod-social {
+            width: fit-content;
+            margin: 0 auto;
+            padding: 1.33rem 0 2.58rem 0;
+
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+                    padding: 0 3.17rem 0 0;
+    
+                    &:last-of-type {
+                        padding: 0;
+                    }
+
+                    a {
+                        font-family: 'FontAwesome5Brands';
+                        font-size: 1.33rem;
+                        line-height: 2.33rem;
+                    }
+
+                    .pod-social--instagram:hover {
+                        color: $color-instagram;
+                    }
+
+                    .pod-social--twitter:hover {
+                        color: $color-twitter;
+                    }
+
+                    .pod-social--telegram:hover {
+                        color: $color-telegram;
+                    }
+
+                    .pod-social--facebook:hover {
+                        color: $color-facebook;
+                    }
+
+                    .pod-social--spotify:hover {
+                        color: $color-spotify;
+                    }
+                }
+            }
+            
+        }
+    }
+}
