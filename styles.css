@@ -28,7 +28,8 @@
     font-size: 2em;
     padding: 2% 5%;
     vertical-align: middle;
-    float: right; }
+    float: right;
+    cursor: pointer; }
   .pod-nav input:checked ~ ul {
     display: block;
     background: linear-gradient(225deg, #0000a3, #0000ff); }
