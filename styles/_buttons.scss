@@ -1,20 +1,32 @@
 .pod-button {
-    height: 4rem;
-    width: 100%;
+    min-height: 4rem;
+    max-width: fit-content;
+    margin: 0 auto;
     background-color: $color-button;
     color: $color-font;
-    font-size: 1.33rem;
-    font-weight: bold;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 4rem; 
+    box-sizing: border-box;
+    
     border-radius: 0.2em;
 
     &:hover {
         cursor: pointer;
         color: $color-white;
         background: linear-gradient(225deg, $color-button-gradient-right 0%, $color-button 100%);
+        box-shadow: 0 0 0 1px $color-white inset;
+    }
+
+    p {
+        padding: 0 3.58rem;
+        font-size: 1.33rem;
+        font-weight: bold;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 4rem; 
+
+        @include sm {
+            padding: 0 4.92rem;
+        }
     }
 }

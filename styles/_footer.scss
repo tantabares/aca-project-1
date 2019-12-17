@@ -25,7 +25,6 @@
 
         .center {
             width: 100%;
-            width: fit-content;
             margin: 0 auto;
             text-align: center;
             position: relative;
@@ -33,7 +32,7 @@
             padding-bottom: 5.58rem;
             z-index: 3;
         
-            p {
+            .text {
                 font-size: 3rem;
                 line-height: 42px;
                 letter-spacing: 0;
@@ -43,65 +42,76 @@
             }
         
             .container {
-                padding: 5.33rem 5% 5.58rem 5%;
+                padding: 5.33rem 5% 5.58rem;
             }
         }
     }
 
     .pod-white-footer {
 
-        padding: 2rem 0 0 0;
+        padding: 2rem 0;
 
-        .container p {
-            font-size: 1.17rem;
-            line-height: 1.83rem;
-            text-align: center;
-        }
+        .container {
 
-        .pod-social {
-            width: fit-content;
-            margin: 0 auto;
-            padding: 1.33rem 0 2.58rem 0;
+            p {
+                font-size: 1.17rem;
+                line-height: 1.83rem;
+                text-align: center;
+            }
 
-            ul {
-                display: flex;
-                list-style: none;
-
-                li {
-                    padding: 0 3.17rem 0 0;
+            .pod-social {
+                width: fit-content;
+                margin: 0 auto;
+                padding: 1.33rem 0 2.58rem 0;
     
-                    &:last-of-type {
-                        padding: 0;
-                    }
-
-                    a {
-                        font-family: 'FontAwesome5Brands';
-                        font-size: 1.33rem;
-                        line-height: 2.33rem;
-                    }
-
-                    .pod-social--instagram:hover {
-                        color: $color-instagram;
-                    }
-
-                    .pod-social--twitter:hover {
-                        color: $color-twitter;
-                    }
-
-                    .pod-social--telegram:hover {
-                        color: $color-telegram;
-                    }
-
-                    .pod-social--facebook:hover {
-                        color: $color-facebook;
-                    }
-
-                    .pod-social--spotify:hover {
-                        color: $color-spotify;
+                ul {
+                    display: flex;
+                    list-style: none;
+    
+                    li {
+                        padding: 0 3.17rem 0 0;
+        
+                        &:last-of-type {
+                            padding: 0;
+                        }
+    
+                        a {
+                            font-family: 'FontAwesome5Brands';
+                            font-size: 1.33rem;
+                            line-height: 2.33rem;
+                        }
+    
+                        .pod-social--instagram:hover {
+                            color: $color-instagram;
+                        }
+    
+                        .pod-social--twitter:hover {
+                            color: $color-twitter;
+                        }
+    
+                        .pod-social--telegram:hover {
+                            color: $color-telegram;
+                        }
+    
+                        .pod-social--facebook:hover {
+                            color: $color-facebook;
+                        }
+    
+                        .pod-social--spotify:hover {
+                            color: $color-spotify;
+                        }
                     }
                 }
+    
+                @include sm {
+                    margin: 0 0 0 auto;
+                    padding: 0;
+                }
             }
-            
+
+            @include sm {
+                display: flex;
+            }
         }
     }
 }

@@ -10,6 +10,7 @@
 
         &:hover {
             color: $color-button;
+            font-weight: bold;
         }
     }
 }
@@ -22,6 +23,6 @@ body {
 }
 
 .container {
-    padding: 0 5% 0 5%;
+    padding: 0 5%;
     margin: 0 auto;
 }

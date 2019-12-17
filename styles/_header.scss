@@ -12,16 +12,32 @@
 
     #hamburguer {
         display: none;
+
+        &:checked ~ ul {
+            display: block;
+            background: linear-gradient(225deg, $color-gradient-bottom-color, $color-gradient-top);
+        }
+
+        @include sm {
+            display: none;
+        }
     }
 
-    .container {
-        background-color: $color-white;
+    .logo {
+        @include sm {
+            padding: 2% 5%;
+        }
     }
 
     img {
         height: 32px;
         vertical-align: middle;
         padding: 2% 5%;
+        animation: rotation 5s infinite linear;
+
+        @include sm {
+            padding: 0;
+        }
     }
 
     label {
@@ -33,19 +49,16 @@
         vertical-align: middle;
         float: right;
         cursor: pointer;
-    }
 
-    input {
-        &:checked ~ ul {
-            display: block;
-            background: linear-gradient(225deg, $color-gradient-bottom-color, $color-gradient-top);
+        @include sm {
+            display: none;
         }
     }
 
     ul {
         list-style-type: none;
         display: none;
-        padding: 0 5% 0 5%;
+        padding: 0 5%;
 
         li {
             padding: 0 0 2rem 0;
@@ -58,11 +71,34 @@
                 &:hover {
                     color: $color-button;
                 }
+
+                @include sm {
+                    color: $color-font;
+                }
             }
 
             &:first-child {
                 padding-top: 1.33rem;
+
+                @include sm {
+                    padding: 0;
+                }
+            }
+
+            @include sm {
+                padding: 0 0 0 4rem;
             }
         }
+
+        @include sm {
+            display: flex;
+            padding: 2% 5%;
+            margin: 0 0 0 auto;
+        }
+    }
+
+    @include sm {
+        display: flex;
+        float: right;
     }
 }
