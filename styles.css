@@ -115,41 +115,43 @@
       padding: 5.33rem 5% 5.58rem; }
 .pod-footer .pod-white-footer {
   padding: 3rem 0; }
-  .pod-footer .pod-white-footer .container p {
-    line-height: 1.83rem;
-    text-align: center; }
-  .pod-footer .pod-white-footer .container .pod-social {
-    width: fit-content;
-    margin: 0 auto;
-    padding: 1.33rem 0 2.58rem 0; }
-    .pod-footer .pod-white-footer .container .pod-social ul {
-      display: flex;
-      list-style: none; }
-      .pod-footer .pod-white-footer .container .pod-social ul li {
-        padding: 0 3.17rem 0 0; }
-        .pod-footer .pod-white-footer .container .pod-social ul li:last-of-type {
-          padding: 0; }
-        .pod-footer .pod-white-footer .container .pod-social ul li a {
-          font-family: 'FontAwesome5Brands';
-          font-size: 1.33rem;
-          line-height: 2.33rem; }
-        .pod-footer .pod-white-footer .container .pod-social ul li .pod-social--instagram:hover {
-          color: #dd2a7b; }
-        .pod-footer .pod-white-footer .container .pod-social ul li .pod-social--twitter:hover {
-          color: #08a0e9; }
-        .pod-footer .pod-white-footer .container .pod-social ul li .pod-social--telegram:hover {
-          color: #0088cc; }
-        .pod-footer .pod-white-footer .container .pod-social ul li .pod-social--facebook:hover {
-          color: #3b5998; }
-        .pod-footer .pod-white-footer .container .pod-social ul li .pod-social--spotify:hover {
-          color: #1ed761; }
+  .pod-footer .pod-white-footer .container {
+    max-width: none; }
+    .pod-footer .pod-white-footer .container p {
+      line-height: 1.83rem;
+      text-align: center; }
+    .pod-footer .pod-white-footer .container .pod-social {
+      width: fit-content;
+      margin: 0 auto;
+      padding: 1.33rem 0 2.58rem 0; }
+      .pod-footer .pod-white-footer .container .pod-social ul {
+        display: flex;
+        list-style: none; }
+        .pod-footer .pod-white-footer .container .pod-social ul li {
+          padding: 0 3.17rem 0 0; }
+          .pod-footer .pod-white-footer .container .pod-social ul li:last-of-type {
+            padding: 0; }
+          .pod-footer .pod-white-footer .container .pod-social ul li a {
+            font-family: 'FontAwesome5Brands';
+            font-size: 1.33rem;
+            line-height: 2.33rem; }
+          .pod-footer .pod-white-footer .container .pod-social ul li .pod-social--instagram:hover {
+            color: #dd2a7b; }
+          .pod-footer .pod-white-footer .container .pod-social ul li .pod-social--twitter:hover {
+            color: #08a0e9; }
+          .pod-footer .pod-white-footer .container .pod-social ul li .pod-social--telegram:hover {
+            color: #0088cc; }
+          .pod-footer .pod-white-footer .container .pod-social ul li .pod-social--facebook:hover {
+            color: #3b5998; }
+          .pod-footer .pod-white-footer .container .pod-social ul li .pod-social--spotify:hover {
+            color: #1ed761; }
+      @media (min-width: 769px) {
+        .pod-footer .pod-white-footer .container .pod-social {
+          margin: 0 0 0 auto;
+          padding: 0; } }
     @media (min-width: 769px) {
-      .pod-footer .pod-white-footer .container .pod-social {
-        margin: 0 0 0 auto;
-        padding: 0; } }
-  @media (min-width: 769px) {
-    .pod-footer .pod-white-footer .container {
-      display: flex; } }
+      .pod-footer .pod-white-footer .container {
+        display: flex; } }
 
 .pod-button {
   min-height: 4rem;
@@ -175,11 +177,20 @@
     line-height: 4rem; }
     @media (min-width: 769px) {
       .pod-button p {
-        padding: 0 4.92rem; } }
+        padding: 0 4.92rem;
+        font-size: 1.5rem;
+        line-height: 4.67rem; } }
   @media (min-width: 321px) {
     .pod-button {
       min-width: fit-content;
       max-width: fit-content; } }
+  @media (min-width: 769px) {
+    .pod-button {
+      min-height: 4.67rem; } }
+
+@media (min-width: 769px) {
+  .pod-button.title-button {
+    margin: 0 auto 0 0; } }
 
 * {
   margin: 0;
@@ -208,22 +219,44 @@ body {
     body h1 span.linethrough {
       text-decoration: line-through;
       font-size: 3rem; }
+      @media (min-width: 769px) {
+        body h1 span.linethrough {
+          font-size: 5.33rem;
+          line-height: 7rem; } }
     body h1 span.blue {
       color: #0000ec;
       font-size: 3rem; }
+    @media (min-width: 769px) {
+      body h1 {
+        font-size: 5.33rem;
+        line-height: 7rem; } }
 
 .container {
   padding: 0 5%;
+  max-width: 1041px;
   margin: 0 auto; }
   .container .title {
     margin: 0 auto 0 0;
     max-width: 90%; }
     .container .title h1 {
       padding: 2.42rem 0 0 0; }
+      @media (min-width: 769px) {
+        .container .title h1 {
+          padding: 10rem 0 0 0; } }
   .container .subtitle p {
     padding: 1.33rem 0 0 0; }
+    @media (min-width: 769px) {
+      .container .subtitle p {
+        font-size: 1.33rem;
+        line-height: 2rem; } }
+  @media (min-width: 769px) {
+    .container .subtitle {
+      max-width: 52.33rem; } }
   .container .button {
     padding: 3rem 0 0 0; }
+    @media (min-width: 769px) {
+      .container .button {
+        padding: 4.67rem 0 0 0; } }
 
 @keyframes rotation {
   from {
