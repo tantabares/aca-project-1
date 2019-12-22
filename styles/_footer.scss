@@ -38,7 +38,7 @@
                 letter-spacing: 0;
                 padding-bottom: 3rem;
                 color: $color-white;
-                font-family: 'IBM Plex Sans', sans-serif;
+                font-family: $font-family-plex-sans;
             }
         
             .container {
@@ -49,12 +49,11 @@
 
     .pod-white-footer {
 
-        padding: 2rem 0;
+        padding: 3rem 0;
 
         .container {
 
             p {
-                font-size: 1.17rem;
                 line-height: 1.83rem;
                 text-align: center;
             }

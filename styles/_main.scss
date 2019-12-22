@@ -13,16 +13,57 @@
             font-weight: bold;
         }
     }
+
+    p {
+        font-size: 1.17rem;
+        line-height: 1.83rem;
+    }
 }
 
 body {
     background-color: $color-background;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: $font-family-plex-mono;
     color: $color-font;
-    font-size: 1.17rem;
+
+    h1 {
+
+        font-family: $font-family-plex-sans;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        font-weight: lighter;
+
+        span.linethrough {
+            text-decoration: line-through;
+            font-size: 3rem;
+        }
+
+        span.blue {
+            color: $color-blue;
+            font-size: 3rem;
+        }
+    }
 }
 
 .container {
     padding: 0 5%;
     margin: 0 auto;
+
+    .title {
+        margin: 0 auto 0 0;
+        max-width: 90%;
+
+        h1 {
+            padding: 2.42rem 0 0 0;
+        }
+    }
+
+    .subtitle {
+        p {
+            padding: 1.33rem 0 0 0;
+        }
+    }
+
+    .button {
+        padding: 3rem 0 0 0;
+    }
 }

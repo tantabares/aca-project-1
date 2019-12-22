@@ -18,10 +18,10 @@
     .pod-nav #hamburguer:checked ~ ul {
       display: block;
       background: linear-gradient(225deg, #0000a3, #0000ff); }
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       .pod-nav #hamburguer {
         display: none; } }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .pod-nav .logo {
       padding: 2% 5%; } }
   .pod-nav img {
@@ -29,7 +29,7 @@
     vertical-align: middle;
     padding: 2% 5%;
     animation: rotation 5s infinite linear; }
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       .pod-nav img {
         padding: 0; } }
   .pod-nav label {
@@ -41,7 +41,7 @@
     vertical-align: middle;
     float: right;
     cursor: pointer; }
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       .pod-nav label {
         display: none; } }
   .pod-nav ul {
@@ -56,26 +56,26 @@
         line-height: 2.33rem; }
         .pod-nav ul li a:hover {
           color: #00f3bb; }
-        @media (min-width: 768px) {
+        @media (min-width: 769px) {
           .pod-nav ul li a {
             color: #060A24; } }
       .pod-nav ul li:first-child {
         padding-top: 1.33rem; }
-        @media (min-width: 768px) {
+        @media (min-width: 769px) {
           .pod-nav ul li:first-child {
             padding: 0; } }
-      @media (min-width: 768px) {
+      @media (min-width: 769px) {
         .pod-nav ul li {
           padding: 0 0 0 4rem; } }
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       .pod-nav ul {
         display: flex;
         padding: 2% 5%;
         margin: 0 0 0 auto; } }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .pod-nav {
       display: flex;
-      float: right; } }
+      max-height: 6.67rem; } }
 
 .pod-footer .pod-blue-footer {
   width: 100%;
@@ -110,13 +110,12 @@
       letter-spacing: 0;
       padding-bottom: 3rem;
       color: #ffffff;
-      font-family: 'IBM Plex Sans', sans-serif; }
+      font-family: "IBM Plex Sans", sans-serif; }
     .pod-footer .pod-blue-footer .center .container {
       padding: 5.33rem 5% 5.58rem; }
 .pod-footer .pod-white-footer {
-  padding: 2rem 0; }
+  padding: 3rem 0; }
   .pod-footer .pod-white-footer .container p {
-    font-size: 1.17rem;
     line-height: 1.83rem;
     text-align: center; }
   .pod-footer .pod-white-footer .container .pod-social {
@@ -144,17 +143,17 @@
           color: #3b5998; }
         .pod-footer .pod-white-footer .container .pod-social ul li .pod-social--spotify:hover {
           color: #1ed761; }
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       .pod-footer .pod-white-footer .container .pod-social {
         margin: 0 0 0 auto;
         padding: 0; } }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .pod-footer .pod-white-footer .container {
       display: flex; } }
 
 .pod-button {
   min-height: 4rem;
-  max-width: fit-content;
+  min-width: 100%;
   margin: 0 auto;
   background-color: #00f3bb;
   color: #060A24;
@@ -174,9 +173,13 @@
     text-align: center;
     vertical-align: middle;
     line-height: 4rem; }
-    @media (min-width: 768px) {
+    @media (min-width: 769px) {
       .pod-button p {
         padding: 0 4.92rem; } }
+  @media (min-width: 321px) {
+    .pod-button {
+      min-width: fit-content;
+      max-width: fit-content; } }
 
 * {
   margin: 0;
@@ -189,16 +192,38 @@
     * a:hover {
       color: #00f3bb;
       font-weight: bold; }
+  * p {
+    font-size: 1.17rem;
+    line-height: 1.83rem; }
 
 body {
   background-color: #ffffff;
-  font-family: 'IBM Plex Mono', monospace;
-  color: #060A24;
-  font-size: 1.17rem; }
+  font-family: "IBM Plex Mono", monospace;
+  color: #060A24; }
+  body h1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: lighter; }
+    body h1 span.linethrough {
+      text-decoration: line-through;
+      font-size: 3rem; }
+    body h1 span.blue {
+      color: #0000ec;
+      font-size: 3rem; }
 
 .container {
   padding: 0 5%;
   margin: 0 auto; }
+  .container .title {
+    margin: 0 auto 0 0;
+    max-width: 90%; }
+    .container .title h1 {
+      padding: 2.42rem 0 0 0; }
+  .container .subtitle p {
+    padding: 1.33rem 0 0 0; }
+  .container .button {
+    padding: 3rem 0 0 0; }
 
 @keyframes rotation {
   from {

@@ -99,6 +99,6 @@
 
     @include sm {
         display: flex;
-        float: right;
+        max-height: 6.67rem;
     }
 }
