@@ -18,6 +18,10 @@
     .pod-nav #hamburguer:checked ~ ul {
       display: block;
       background: linear-gradient(225deg, #0000a3, #0000ff); }
+      @media (min-width: 769px) {
+        .pod-nav #hamburguer:checked ~ ul {
+          display: flex;
+          background: unset; } }
     @media (min-width: 769px) {
       .pod-nav #hamburguer {
         display: none; } }

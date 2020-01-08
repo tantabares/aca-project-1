@@ -16,6 +16,11 @@
         &:checked ~ ul {
             display: block;
             background: linear-gradient(225deg, $color-gradient-bottom-color, $color-gradient-top);
+
+            @include sm {
+                display: flex;
+                background: unset;
+            }
         }
 
         @include sm {
