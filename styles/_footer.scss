@@ -49,11 +49,12 @@
 
     .pod-white-footer {
 
-        padding: 3rem 0;
+        padding: 3rem 2%;
 
         .container {
 
-            max-width: none;
+            max-width: 100rem;
+            margin: 0 auto;
 
             p {
                 line-height: 1.83rem;
@@ -112,6 +113,10 @@
 
             @include sm {
                 display: flex;
+            }
+
+            @include lg {
+                padding: 3rem 0;
             }
         }
     }

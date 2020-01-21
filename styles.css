@@ -18,14 +18,14 @@
     .pod-nav #hamburguer:checked ~ ul {
       display: block;
       background: linear-gradient(225deg, #0000a3, #0000ff); }
-      @media (min-width: 769px) {
+      @media (min-width: 768px) {
         .pod-nav #hamburguer:checked ~ ul {
           display: flex;
           background: unset; } }
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       .pod-nav #hamburguer {
         display: none; } }
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     .pod-nav .logo {
       padding: 2% 5%; } }
   .pod-nav img {
@@ -33,7 +33,7 @@
     vertical-align: middle;
     padding: 2% 5%;
     animation: rotation 5s infinite linear; }
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       .pod-nav img {
         padding: 0; } }
   .pod-nav label {
@@ -45,7 +45,7 @@
     vertical-align: middle;
     float: right;
     cursor: pointer; }
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       .pod-nav label {
         display: none; } }
   .pod-nav ul {
@@ -60,26 +60,181 @@
         line-height: 2.33rem; }
         .pod-nav ul li a:hover {
           color: #00f3bb; }
-        @media (min-width: 769px) {
+        @media (min-width: 768px) {
           .pod-nav ul li a {
             color: #060A24; } }
       .pod-nav ul li:first-child {
         padding-top: 1.33rem; }
-        @media (min-width: 769px) {
+        @media (min-width: 768px) {
           .pod-nav ul li:first-child {
             padding: 0; } }
-      @media (min-width: 769px) {
+      @media (min-width: 768px) {
         .pod-nav ul li {
           padding: 0 0 0 4rem; } }
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       .pod-nav ul {
         display: flex;
         padding: 2% 5%;
         margin: 0 0 0 auto; } }
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     .pod-nav {
       display: flex;
       max-height: 6.67rem; } }
+
+.pod-title {
+  padding: 0 5%;
+  max-width: 1040px;
+  margin: 0 auto; }
+  .pod-title .title {
+    margin: 0 auto 0 0;
+    max-width: 90%; }
+    .pod-title .title h1 {
+      padding: 2.42rem 0 0 0; }
+      @media (min-width: 768px) {
+        .pod-title .title h1 {
+          padding: 10rem 0 0 0; } }
+  .pod-title .subtitle p {
+    padding: 1.33rem 0 0 0; }
+    @media (min-width: 768px) {
+      .pod-title .subtitle p {
+        font-size: 1.33rem;
+        line-height: 2rem; } }
+  @media (min-width: 768px) {
+    .pod-title .subtitle {
+      max-width: 52.33rem; } }
+  .pod-title .button {
+    padding: 3rem 0 0 0; }
+    @media (min-width: 768px) {
+      .pod-title .button {
+        padding: 4.67rem 0 0 0; } }
+
+.pod-podcasts {
+  padding: 4rem 0 0 0; }
+  .pod-podcasts .pod-blue-container {
+    width: 100%;
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    position: relative;
+    overflow: hidden;
+    z-index: 1; }
+    .pod-podcasts .pod-blue-container .center {
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      top: 3rem;
+      padding-bottom: 11.96rem;
+      -webkit-transform: skewY(5deg);
+      -moz-transform: skewY(5deg);
+      -ms-transform: skewY(5deg);
+      -o-transform: skewY(5deg);
+      transform: skewY(5deg);
+      z-index: 3; }
+      .pod-podcasts .pod-blue-container .center .text {
+        font-size: 3rem;
+        line-height: 42px;
+        letter-spacing: 0;
+        padding: 1rem 0 1.75rem 0;
+        color: #ffffff;
+        font-family: "IBM Plex Sans", sans-serif; }
+        @media (min-width: 768px) {
+          .pod-podcasts .pod-blue-container .center .text {
+            font-size: 4rem;
+            padding: 6rem 0 3rem 0; } }
+      .pod-podcasts .pod-blue-container .center .container {
+        padding: 0 5%;
+        max-width: 1040px;
+        margin: 0 auto; }
+      .pod-podcasts .pod-blue-container .center .container-podcasts {
+        padding: 0 3%;
+        display: grid;
+        gap: .92rem 0;
+        max-width: 100rem;
+        margin: 0 auto; }
+        @media (min-width: 768px) {
+          .pod-podcasts .pod-blue-container .center .container-podcasts {
+            grid-template-columns: auto auto;
+            gap: 2rem;
+            padding: 0 2%; } }
+        @media (min-width: 960px) {
+          .pod-podcasts .pod-blue-container .center .container-podcasts {
+            gap: 3rem; }
+            .pod-podcasts .pod-blue-container .center .container-podcasts .item-podcast {
+              max-width: 48.67rem; } }
+        @media (min-width: 1200px) {
+          .pod-podcasts .pod-blue-container .center .container-podcasts {
+            gap: 6rem;
+            padding: 0; } }
+      @media (min-width: 768px) {
+        .pod-podcasts .pod-blue-container .center {
+          padding-bottom: 16rem; } }
+
+.pod-venimos {
+  z-index: 2;
+  position: relative;
+  top: -6rem;
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 5%; }
+  .pod-venimos .container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .pod-venimos .container .content {
+      padding: 0 0 0 1%; }
+      .pod-venimos .container .content .title {
+        padding: 2.25rem 0 0 0; }
+      .pod-venimos .container .content .subtitle {
+        padding: .67rem 0 0 0; }
+        @media (min-width: 768px) {
+          .pod-venimos .container .content .subtitle {
+            padding: 2rem 0 0 0; } }
+    @media (min-width: 768px) {
+      .pod-venimos .container {
+        padding: 0;
+        max-width: 38.67rem; } }
+  .pod-venimos .image {
+    width: 100%;
+    height: auto;
+    max-width: 30rem;
+    margin: 0 auto;
+    z-index: 5; }
+    .pod-venimos .image img {
+      width: 100%;
+      height: auto; }
+    @media (min-width: 768px) {
+      .pod-venimos .image {
+        min-width: 30rem;
+        max-width: 38.13rem; } }
+  @media (min-width: 768px) {
+    .pod-venimos {
+      display: flex;
+      top: -7rem; } }
+
+.pod-invitados .container {
+  padding: 0 5%;
+  max-width: 1040px;
+  margin: 0 auto; }
+.pod-invitados .images-invitados {
+  padding: 1.17rem 0 0 0;
+  display: grid; }
+  .pod-invitados .images-invitados div {
+    width: 100%;
+    height: auto; }
+    .pod-invitados .images-invitados div img {
+      display: block;
+      width: 100%;
+      height: auto; }
+  @media (min-width: 768px) {
+    .pod-invitados .images-invitados {
+      padding-top: 3rem;
+      grid-template-columns: auto auto; } }
+  @media (min-width: 960px) {
+    .pod-invitados .images-invitados {
+      grid-template-columns: auto auto auto; } }
 
 .pod-footer .pod-blue-footer {
   width: 100%;
@@ -118,9 +273,10 @@
     .pod-footer .pod-blue-footer .center .container {
       padding: 5.33rem 5% 5.58rem; }
 .pod-footer .pod-white-footer {
-  padding: 3rem 0; }
+  padding: 3rem 2%; }
   .pod-footer .pod-white-footer .container {
-    max-width: none; }
+    max-width: 100rem;
+    margin: 0 auto; }
     .pod-footer .pod-white-footer .container p {
       line-height: 1.83rem;
       text-align: center; }
@@ -149,13 +305,16 @@
             color: #3b5998; }
           .pod-footer .pod-white-footer .container .pod-social ul li .pod-social--spotify:hover {
             color: #1ed761; }
-      @media (min-width: 769px) {
+      @media (min-width: 768px) {
         .pod-footer .pod-white-footer .container .pod-social {
           margin: 0 0 0 auto;
           padding: 0; } }
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       .pod-footer .pod-white-footer .container {
         display: flex; } }
+    @media (min-width: 1200px) {
+      .pod-footer .pod-white-footer .container {
+        padding: 3rem 0; } }
 
 .pod-button {
   min-height: 4rem;
@@ -179,20 +338,20 @@
     text-align: center;
     vertical-align: middle;
     line-height: 4rem; }
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       .pod-button p {
         padding: 0 4.92rem;
         font-size: 1.5rem;
         line-height: 4.67rem; } }
-  @media (min-width: 321px) {
+  @media (min-width: 320px) {
     .pod-button {
       min-width: fit-content;
       max-width: fit-content; } }
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     .pod-button {
       min-height: 4.67rem; } }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .pod-button.title-button {
     margin: 0 auto 0 0; } }
 
@@ -223,44 +382,25 @@ body {
     body h1 span.linethrough {
       text-decoration: line-through;
       font-size: 3rem; }
-      @media (min-width: 769px) {
+      @media (min-width: 768px) {
         body h1 span.linethrough {
           font-size: 5.33rem;
           line-height: 7rem; } }
     body h1 span.blue {
       color: #0000ec;
       font-size: 3rem; }
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       body h1 {
         font-size: 5.33rem;
         line-height: 7rem; } }
-
-.container {
-  padding: 0 5%;
-  max-width: 1041px;
-  margin: 0 auto; }
-  .container .title {
-    margin: 0 auto 0 0;
-    max-width: 90%; }
-    .container .title h1 {
-      padding: 2.42rem 0 0 0; }
-      @media (min-width: 769px) {
-        .container .title h1 {
-          padding: 10rem 0 0 0; } }
-  .container .subtitle p {
-    padding: 1.33rem 0 0 0; }
-    @media (min-width: 769px) {
-      .container .subtitle p {
-        font-size: 1.33rem;
-        line-height: 2rem; } }
-  @media (min-width: 769px) {
-    .container .subtitle {
-      max-width: 52.33rem; } }
-  .container .button {
-    padding: 3rem 0 0 0; }
-    @media (min-width: 769px) {
-      .container .button {
-        padding: 4.67rem 0 0 0; } }
+  body h2 {
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family: "IBM Plex Sans", sans-serif; }
+    @media (min-width: 768px) {
+      body h2 {
+        font-size: 4rem;
+        line-height: 4rem; } }
 
 @keyframes rotation {
   from {

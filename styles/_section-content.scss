@@ -1,0 +1,94 @@
+.pod-venimos {
+
+    z-index: 2;
+    position: relative;
+    top: -6rem;
+    max-width: 82rem;
+    margin: 0 auto;
+    padding: 0 5%;
+
+    .container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content {
+            padding: 0 0 0 1%;
+
+            .title {
+                padding: 2.25rem 0 0 0;
+            }
+
+            .subtitle {
+                padding: .67rem 0 0 0;
+
+                @include sm {
+                    padding: 2rem 0 0 0;
+                }
+            }
+        }
+
+        @include sm {
+            padding: 0;
+            max-width: 38.67rem;
+        }
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        max-width: 30rem;
+        margin: 0 auto;
+        z-index: 5;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+
+        @include sm {
+            min-width: 30rem;
+            max-width: 38.13rem;
+        }
+    }
+
+    @include sm {
+        display: flex;
+        top: -7rem;
+    }
+}
+
+.pod-invitados {
+    .container {
+        padding: 0 5%;
+        max-width: $screen-xl-min - 400px;
+        margin: 0 auto;
+    }
+
+    .images-invitados {
+        padding: 1.17rem 0 0 0;
+        display: grid;
+
+        div {
+            width: 100%;
+            height: auto;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @include sm {
+            padding-top: 3rem;
+            grid-template-columns: auto auto;
+        }
+
+        @include md {
+            grid-template-columns: auto auto auto;
+        }
+    }
+}
