@@ -117,7 +117,8 @@
     -ms-transform: skewY(-5deg);
     -o-transform: skewY(-5deg);
     transform: skewY(-5deg);
-    background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    background-image: url("../assets/icons/cage.svg"), linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
     position: relative;
     overflow: hidden;
     z-index: 1; }
@@ -192,6 +193,9 @@
         @media (min-width: 768px) {
           .pod-venimos .container .content .subtitle {
             padding: 2rem 0 0 0; } }
+      @media (min-width: 1200px) {
+        .pod-venimos .container .content {
+          padding: 0 0 0 5.2rem; } }
     @media (min-width: 768px) {
       .pod-venimos .container {
         padding: 0;
@@ -223,7 +227,11 @@
   display: grid; }
   .pod-invitados .images-invitados div {
     width: 100%;
-    height: auto; }
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in; }
+    .pod-invitados .images-invitados div:hover {
+      opacity: 0.7; }
     .pod-invitados .images-invitados div img {
       display: block;
       width: 100%;
@@ -235,6 +243,47 @@
   @media (min-width: 960px) {
     .pod-invitados .images-invitados {
       grid-template-columns: auto auto auto; } }
+
+.pod-temas {
+  margin: 5.33rem 0 2.83rem 0; }
+  .pod-temas .container {
+    padding: 0 5%;
+    max-width: 1040px;
+    margin: 0 auto; }
+    .pod-temas .container .items-temas {
+      padding: 3rem 0 0 0;
+      display: grid;
+      gap: 5.42rem;
+      width: 100%; }
+      .pod-temas .container .items-temas .tema-set {
+        cursor: pointer;
+        transition: all .2s ease-in-out; }
+        .pod-temas .container .items-temas .tema-set:hover {
+          transform: scale(1.1); }
+        .pod-temas .container .items-temas .tema-set .image-item {
+          text-align: center; }
+        .pod-temas .container .items-temas .tema-set .desc-item {
+          color: #060A24;
+          padding-top: 1.08rem;
+          font-size: 2rem;
+          font-weight: bold;
+          line-height: 2.67rem;
+          font-family: "IBM Plex Sans", sans-serif;
+          text-align: center;
+          max-width: 18.33rem;
+          margin: 0 auto; }
+        @media (min-width: 1200px) {
+          .pod-temas .container .items-temas .tema-set {
+            min-width: 21.67rem; } }
+      @media (min-width: 768px) {
+        .pod-temas .container .items-temas {
+          padding: 4.67rem 0 0 0;
+          grid-template-columns: auto auto;
+          gap: 4rem; } }
+      @media (min-width: 960px) {
+        .pod-temas .container .items-temas {
+          grid-template-columns: auto auto auto auto;
+          gap: 0; } }
 
 .pod-footer .pod-blue-footer {
   width: 100%;
@@ -252,7 +301,8 @@
     -o-transform: skewY(-3deg);
     transform: skewY(-3deg);
     z-index: 2;
-    background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    background-image: url("../assets/icons/hexagons.svg"), linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
     position: absolute;
     top: 15%; }
   .pod-footer .pod-blue-footer .center {
@@ -312,9 +362,6 @@
     @media (min-width: 768px) {
       .pod-footer .pod-white-footer .container {
         display: flex; } }
-    @media (min-width: 1200px) {
-      .pod-footer .pod-white-footer .container {
-        padding: 3rem 0; } }
 
 .pod-button {
   min-height: 4rem;
@@ -343,7 +390,7 @@
         padding: 0 4.92rem;
         font-size: 1.5rem;
         line-height: 4.67rem; } }
-  @media (min-width: 320px) {
+  @media (min-width: 321px) {
     .pod-button {
       min-width: fit-content;
       max-width: fit-content; } }
@@ -396,7 +443,8 @@ body {
   body h2 {
     font-size: 3rem;
     font-weight: lighter;
-    font-family: "IBM Plex Sans", sans-serif; }
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #060A24; }
     @media (min-width: 768px) {
       body h2 {
         font-size: 4rem;

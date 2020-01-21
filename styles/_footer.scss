@@ -18,7 +18,8 @@
             -o-transform: skewY(-3deg);
             transform: skewY(-3deg);
             z-index: 2;
-            background: linear-gradient(225deg, $color-gradient-top 0%, $color-gradient-bottom-color 100%);
+            background-image: linear-gradient(225deg, $color-gradient-top 0%, $color-gradient-bottom-color 100%);
+            background-image: url('../assets/icons/hexagons.svg'), linear-gradient(225deg, $color-gradient-top 0%, $color-gradient-bottom-color 100%);
             position: absolute;
             top: 15%;
         }
@@ -113,10 +114,6 @@
 
             @include sm {
                 display: flex;
-            }
-
-            @include lg {
-                padding: 3rem 0;
             }
         }
     }

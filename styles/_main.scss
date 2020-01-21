@@ -57,6 +57,7 @@ body {
         font-size: 3rem;
         font-weight: lighter;
         font-family: $font-family-plex-sans;
+        color: $color-font;
 
         @include sm {
             font-size: 4rem;
