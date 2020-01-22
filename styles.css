@@ -22,6 +22,10 @@
         .pod-nav #hamburguer:checked ~ ul {
           display: flex;
           background: unset; } }
+    .pod-nav #hamburguer:checked ~ label .close {
+      display: block; }
+    .pod-nav #hamburguer:checked ~ label .burguer {
+      display: none; }
     @media (min-width: 768px) {
       .pod-nav #hamburguer {
         display: none; } }
@@ -36,7 +40,11 @@
     @media (min-width: 768px) {
       .pod-nav img {
         padding: 0; } }
-  .pod-nav label {
+  .pod-nav label .close {
+    display: none; }
+  .pod-nav label span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     display: inline-block;
     color: #060A24;
     font-style: normal;
@@ -46,7 +54,7 @@
     float: right;
     cursor: pointer; }
     @media (min-width: 768px) {
-      .pod-nav label {
+      .pod-nav label span {
         display: none; } }
   .pod-nav ul {
     list-style-type: none;
