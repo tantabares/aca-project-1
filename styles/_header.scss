@@ -1,5 +1,4 @@
 .pod-header {
-    overflow: hidden;
     position: sticky;
     top: 0;
     width: 100%;
@@ -15,22 +14,36 @@
 
         &:checked {
             ~ ul {
+                width: 100%;
                 display: block;
                 background: linear-gradient(225deg, $color-gradient-bottom-color, $color-gradient-top);
+                position: absolute;
+                top: 100%;
 
                 @include sm {
                     display: flex;
                     background: unset;
+                    position: relative;
+                    top: unset;
+                    width: unset;
                 }
             }
 
             ~ label  {
                 .close {
                     display: block;
+
+                    @include sm {
+                        display: none;
+                    }
                 }
 
                 .burguer {
                     display: none;
+
+                    @include sm {
+                        display: none;
+                    }
                 }
             }
         }

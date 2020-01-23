@@ -17,7 +17,7 @@
             <input type="checkbox" id="hamburguer"/>
             <label for="hamburguer"><span class="burguer">&#9776;</span><span class="close">&#10005;</span></label>
 
-            <ul>
+            <ul id="nav-list">
                 <li><a href="#episodes">EPISODIOS</a></li>
                 <li><a href="#aboutus">NOSOTROS</a></li>
                 <li><a href="#interviews">ENTREVISTAS</a></li>
@@ -38,24 +38,24 @@
         </div>
     </section>
 
-    <a name="episodes"></a>
+    <a id="episodes"></a>
     <section class="pod-podcasts">
         <div class="pod-blue-container">
             <div class="center">
                 <div class="container">
-                    <p class="text">Episodios</p>
+                    <h2 class="text">Episodios</h2>
                 </div>
                 <div class="container-podcasts">
-                    <div class="item-podcast"><iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                    <div class="item-podcast"><iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                    <div class="item-podcast"><iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                    <div class="item-podcast"><iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+                    <div class="item-podcast"><iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" height="232" allow="encrypted-media"></iframe></div>
+                    <div class="item-podcast"><iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" height="232" allow="encrypted-media"></iframe></div>
+                    <div class="item-podcast"><iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" height="232" allow="encrypted-media"></iframe></div>
+                    <div class="item-podcast"><iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" height="232" allow="encrypted-media"></iframe></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <a name="aboutus"></a>
+    <a id="aboutus"></a>
     <section class="pod-venimos">
         <div class="image">
             <img src="assets/images/phone.png" alt="Imagen de un teléfono celular con un articulo y una imagen">
@@ -77,7 +77,7 @@
         </div>
     </section>
 
-    <a name="interviews"></a>
+    <a id="interviews"></a>
     <section class="pod-invitados">
         <div class="container">
             <div class="title">
@@ -95,7 +95,7 @@
         </div>
     </section>
 
-    <a name="topics"></a>
+    <a id="topics"></a>
     <section class="pod-temas">
         <div class="container">
             <div class="title">
@@ -154,5 +154,17 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/442298b2fe.js" crossorigin="anonymous"></script>
+    <script>
+        let nav = document.getElementById('nav-list');
+        let chk = document.getElementById('hamburguer');
+
+        nav.addEventListener('click', function(e) {
+            let bg = getComputedStyle(nav, null).getPropertyValue("background");
+            
+            if(bg.includes('linear-gradient')) {
+                chk.checked = false;
+            }
+        });
+    </script>
 </body>
 </html>
